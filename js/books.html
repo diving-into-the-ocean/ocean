@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mymusics</title>
+	<style>
+	body{  background-color:#160404;}
+	.lanren{width:1000px;overflow:hidden;margin:0 auto;}
+	.flip-3d { 
+	  perspective: 1200px; width: 33%; float: left;  
+	}
+	.flip-3d figure { 
+	  position: relative; 
+	  transform-style: preserve-3d; 
+	  transition: 1s transform;
+	  font-size: 1.6rem;
+	  margin:25px;
+	}
+	.box{
+		background-position:93% 50%;
+		background-image:url(./dengxia.jpg );
+		background-size:500px 500px;
+	}
+	.flip-3d figure img { 
+	  width: 100%;  
+	}
+	.flip-3d figure figcaption { 
+	  position: absolute; 
+	  width: 100%; height: 100%; top: 0; 
+	  transform: rotateY(.5turn) translateZ(1px); 
+	  background:white; 
+	  text-align: center; 
+	  padding-top: 45%; 
+	  opacity: 0.6; 
+	  transition: 1s .5s opacity; 
+	}
+	.flip-3d:hover figure { transform: rotateY(.5turn); }
+	.flip-3d:hover figure figcaption { opacity: 1; }
+	.flip-3d figure:after { 
+	  content: " "; display: block;
+	  height: 8vw; width: 100%; 
+	  transform: rotateX(90deg); 
+	  background-image:radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); 
+	}
+	@media screen and (max-width: 800px) { 
+	  #flip-3d { perspective-origin: center top; }
+		div#flip-3d figure { 
+	    float: none; 
+	    width: 50%; 
+	    margin: 0 auto; 
+	    margin-bottom: 12vw; 
+	  }
+	 .flip-3d figure figcaption{font-size: 0.8rem;}
+		div#flip-3d figure:last-child { display: none; }
+	}
+	</style>
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body >
+	<div class="box">
+	<!-- 代码部分begin -->
+	<div class="lanren">
+		<div class="flip-3d">
+		 	<figure>
+		    	<img src="huxiaoshanzhuang.jpg" alt="not you" width="280" height="auto">
+		    	<figcaption><font size="2">《呼啸山庄》是英国19世纪文学的代表作之一，讲述了主人公希斯克利夫为了复仇而采取疯狂行动的故事。通过描写主人公内心的痛苦和无奈，小说展现了人性的复杂性和情感的力量。它用深情而暴力的方式，表达了对爱情的执着和无法抗拒的渴望。同时，小说也揭示了英国社会的黑暗面和人性的脆弱性。它通过情感的描绘，引发读者对人性的思考和反思。</font></figcaption>
+			</figure>
+		</div>
+		<div class="flip-3d">
+			<figure>
+		    	<img width="30%" height="200%" src="santi.jpg" alt="懒人之家" >
+		    	<figcaption><font size="3">给岁月以文明，而不是给文明岁月，给时光以生命，而不是给生命以时光。<br>死亡是唯一一座永远亮着的灯塔，不管你向哪里航行，最终都得转向它指引的方向。一切都会逝去，只有死神永生。<br>无知和弱小不是生存的障碍，傲慢才是。<br>——《三体》<font></figcaption>
+		  	</figure>
+		</div>
+		<div class="flip-3d">
+			<figure>
+		    	<img src="bainiangudu.jpg" alt="懒人之家">
+		    	<figcaption><font size="2">《百年孤独》是哥伦比亚作家加西亚·马尔克斯创作的一部经典文学作品，讲述了布恩迪亚家族七代人的传奇故事，以及加勒比海沿岸小镇马孔多的百年兴衰。这本书通过描写布恩迪亚家族的七代人，展现了他们经历的政治、战争、革命以及个人情感的起伏变化，其中融入了魔幻现实主义的元素。通过讲述他们的故事，马尔克斯巧妙地展示了时间、孤独、爱、痛苦等主题，给读者带来了深刻的思考和哲理的启示。</font></figcaption>
+			</figure>
+		
+	</div>
+	</div>
+	<br><br>
+	<div class="lanren">
+		<div class="flip-3d">
+		 	<figure>
+		    	<img src="gailv.jpg" alt="not you" width="280" height="auto">
+		    	<figcaption><font size ="2">概率思维就像硬币的两面，学会理性分析。为什么刘润老师如此推荐概率思维呢？那是因为概率思维其实就像硬币的两面，一而是对我们有利的概率，称为运气，而另一面是对我们不利的概率，称为倒霉。我们要做的，就是尽可能多地把运气那面超过倒霉那面，如此，创业成功会增加更大的筹码，让决策更加理智。概率思维就是要我们心平气和地承认，就算做对了所有的事情，成功的概率也不高，可能在互联网行业只有不超过5%的概率。那么，在这样的情况下，我们就要思考，应该用什么样的方式去提高概率。</font></figcaption>
+			</figure>
+		</div>
+		<div class="flip-3d">
+			<figure>
+		    	<img width="30%" height="200%" src="lang.jpg" alt="懒人之家" >
+		    	<figcaption><font size="4">《荒原狼》的时代是一个信仰缺失的堕落时代，黑塞在作品中充分展现了时代的堕落和罪恶，并在以哈立为代表的荒原狼身上展现了个体灵魂的苦难和困境。</font></figcaption>
+		  	</figure>
+		</div>
+		<div class="flip-3d">
+			<figure>
+		    	<!-- <img src="xiaoyunhui.jpg" alt="懒人之家">
+		    	<figcaption><font size="3"><br><br><br><br>我穿着印有IT字样的院系队服，参加华中科技大学校运会。</font></figcaption> -->
+			</figure>
+		</div>
+	</div>
+</div>
+	<!-- 代码部分end -->
+</body>
+</html>

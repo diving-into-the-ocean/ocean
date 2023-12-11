@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mymusics</title>
+	<style>
+	body{  background-color:#160404;}
+	.lanren{width:1000px;overflow:hidden;margin:0 auto;}
+	.flip-3d { 
+	  perspective: 1200px; width: 33%; float: left;  
+	}
+	.flip-3d figure { 
+	  position: relative; 
+	  transform-style: preserve-3d; 
+	  transition: 1s transform;
+	  font-size: 1.6rem;
+	  margin:25px;
+	}
+	.box{
+		background-repeat: no-repeat;
+		background-position:100% 0%;
+		background-image:url(./starsky.jpg );
+		background-size:1700px 900px;
+	}
+	.flip-3d figure img { 
+	  width: 100%;  
+	}
+	.flip-3d figure figcaption { 
+	  position: absolute; 
+	  width: 100%; height: 100%; top: 0; 
+	  transform: rotateY(.5turn) translateZ(1px); 
+	  background:white; 
+	  text-align: center; 
+	  padding-top: 45%; 
+	  opacity: 0.6; 
+	  transition: 1s .5s opacity; 
+	}
+	.flip-3d:hover figure { transform: rotateY(.5turn); }
+	.flip-3d:hover figure figcaption { opacity: 1; }
+	.flip-3d figure:after { 
+	  content: " "; display: block;
+	  height: 8vw; width: 100%; 
+	  transform: rotateX(90deg); 
+	  background-image:radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); 
+	}
+	@media screen and (max-width: 800px) { 
+	  #flip-3d { perspective-origin: center top; }
+		div#flip-3d figure { 
+	    float: none; 
+	    width: 50%; 
+	    margin: 0 auto; 
+	    margin-bottom: 12vw; 
+	  }
+	 .flip-3d figure figcaption{font-size: 0.8rem;}
+		div#flip-3d figure:last-child { display: none; }
+	}
+	</style>
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body >
+	<div class="box">
+	<!-- 代码部分begin -->
+	<div class="lanren">
+		<div class="flip-3d">
+		 	<figure>
+		    	<img src="not you.jpg" alt="not you" width="280" height="auto">
+		    	<figcaption><font size="8">not you<br><br></font><font size="3"><br>《not you》是电音教主Alan Walker的一部新作，歌曲略带忧伤感却又充满纵深与悠远的独特浪漫，是一首当之无愧的电音神曲。</font></figcaption>
+			</figure>
+		</div>
+		<div class="flip-3d">
+			<figure>
+		    	<img width="30%" height="200%" src="time.jpg" alt="懒人之家" >
+		    	<figcaption><font size="8">timeleaper<br><br></font><font size="3"><br>《timeleaper》18岁电音鬼才Hinkik的成名之作，其似真似幻的旋律仿佛使人穿越时空的阻隔，抵达那亘古无边的永恒，于星海之中放歌。</font></figcaption>
+		  	</figure>
+		</div>
+		<div class="flip-3d">
+			<figure>
+		    	<img src="explorers.jpg" alt="懒人之家">
+		    	<figcaption><font size="8">explorers<br><br></font><font size="3"><br>探索者倾其一生，与失意为侣，在孤寂中写诗，与悠悠岁月长河之中谱写出一曲曲属于他们的壮丽诗篇。那些于暗夜中寻光的坚毅身影，正是所有诗意浪漫的源泉。</font></figcaption>
+			</figure>
+		
+	</div>
+	</div>
+	<br><br>
+	<div class="lanren">
+		<div class="flip-3d">
+		 	<figure>
+		    	<img src="hunted.jpg" alt="not you" width="280" height="auto">
+		    	<figcaption><font size="8">Hunted<br><br></font><font size="3"><br>猎手踽踽独行，穿越困厄与踌躇，踏过繁华与荆棘，由迷茫失意地怒吼，到最终一往无前，这必然是一场极为复杂的心理斗争。</font></figcaption>
+			</figure>
+		</div>
+		<div class="flip-3d">
+			<figure>
+		    	<img width="30%" height="200%" src="firecrackers.jpg" alt="懒人之家" >
+		    	<figcaption><font size="8">firecrackers<br><br></font><font size="3"><br>烟火之中，一岁除。春风送暖，入屠苏。浩瀚的华夏文明融入一曲电音之中，不仅传达着一种情怀，更是炽热的爱国之心与一腔浓郁的人间烟火之气。</font></figcaption>
+		  	</figure>
+		</div>
+		<div class="flip-3d">
+			<figure>
+		    	<img src="sunset.jpg" alt="懒人之家">
+		    	<figcaption><font size="8">sunset<br><br></font><font size="3"><br>大漠孤烟直，长河落日圆，这源于千年之外的浪漫，于这首电音之中得到了深切的共鸣。且让我们在这温柔而又静谧的旋律之中迷失，醉心于落日前的那份独有的寂静！</font></figcaption>
+			</figure>
+		</div>
+	</div>
+</div>
+	<!-- 代码部分end -->
+</body>
+</html>
